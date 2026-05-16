@@ -1,6 +1,7 @@
 import Body from "./Components/Body"
 import NavBar from "./Components/NavBar"
 import Footer from "./Components/Footer"
+import { Outlet } from "react-router-dom"
 // import ApiCalling from "./Components/ApiCalling"
 
 
@@ -9,7 +10,7 @@ function App(){
     <div>
       {/* <ApiCalling/> */}
       <NavBar/>
-      <Body/>
+        <Outlet/>
       <Footer/>
     </div>
   )
