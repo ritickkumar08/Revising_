@@ -5,6 +5,8 @@ import {createBrowserRouter,  RouterProvider } from 'react-router-dom'
 import Offers from './Components/Offers.jsx'
 import SignIn from './Components/SignIn.jsx'
 import Body from './Components/Body.jsx'
+import RestaurantDetails from './Components/RestaurantDetails.jsx'
+import Clock from './Components/Clock.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const appRouter = createBrowserRouter([
       {
         path:'/signin',
         element: <SignIn/>
+      },
+      {
+        path: '/restaurant/:id',
+        element: <RestaurantDetails />
+      },
+      {
+        path: '/clock',
+        element: <Clock/>
       }
     ]
   }
