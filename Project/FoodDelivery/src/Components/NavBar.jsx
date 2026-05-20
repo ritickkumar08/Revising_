@@ -3,10 +3,13 @@ import { BiSolidOffer } from "react-icons/bi";
 import { FaHireAHelper } from "react-icons/fa6";
 import { PiSignInFill } from "react-icons/pi";
 import { FaCartShopping } from "react-icons/fa6";
+import { useSelector } from "react-redux";
+import cartSlice from "../Utils/cartSlice";
 
 
 
 function NavBar(){
+    const cartNumber = useSelector((store)=>store.cart.items)
     return(
         <div>
             <nav className="flex justify-between border items-center px-12 py-3 shadow-sm">
@@ -31,7 +34,7 @@ function NavBar(){
                     </div>
                     <div className="flex">
                         <span className="mt-1 mr-0.5"><FaCartShopping /></span>
-                        <li ml-4>Cart</li>
+                        <li ml-4>Cart-{cartNumber.length}</li>
                     </div>
                 </ul>
             </nav> 

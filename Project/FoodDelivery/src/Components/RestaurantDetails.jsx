@@ -33,6 +33,11 @@ function RestaurantDetails(){
                             </div>
                             <div>
                                 <img className="w-36 " src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU=" alt="" />
+                                <div>
+                                    <button className="border-2 bg-orange-500 ">
+                                        add +
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     )
